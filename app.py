@@ -1,0 +1,1 @@
+from flask import Flask, jsonify, request\n\napp = Flask(__name__)\n\n@app.route('/predict', methods=['POST'])\ndef predict():\n    data = request.get_json()\n    # Implement your model prediction logic here\n    prediction = 'Fake'  # Placeholder for prediction\n    return jsonify({'prediction': prediction})\n\nif __name__ == '__main__':\n    app.run(debug=True)
