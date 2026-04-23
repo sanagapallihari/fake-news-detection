@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Detection</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Fake News Detection System</h1>
+        <nav>
+            <ul>
+                <li><a href="#dataset-management">Dataset Management</a></li>
+                <li><a href="#model-training">Model Training</a></li>
+                <li><a href="#news-prediction">News Prediction</a></li>
+                <li><a href="#statistics-dashboard">Statistics Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="dataset-management">
+            <h2>Dataset Management</h2>
+            <input type="file" id="dataset-upload" accept=".csv">
+            <button id="upload-button">Upload Dataset</button>
+            <div id="dataset-table"></div>
+        </section>
+        <section id="model-training">
+            <h2>Model Training</h2>
+            <button id="train-model-button">Train Model</button>
+            <div id="training-status"></div>
+        </section>
+        <section id="news-prediction">
+            <h2>News Prediction</h2>
+            <textarea id="news-input" placeholder="Enter news article here..."></textarea>
+            <button id="predict-button">Predict</button>
+            <div id="prediction-result"></div>
+        </section>
+        <section id="statistics-dashboard">
+            <h2>Statistics Dashboard</h2>
+            <div id="statistics"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Fake News Detection Project</p>
+    </footer>
+</body>
+</html>
